@@ -167,6 +167,9 @@ def exercise_one(number_one, number_two):
         print('too high', guess)
 
 
+#  -----------------Упражнение-----------------------------------------------------------------------------------------
+
+
 def exercise_two(size, color):
 
     chery = ['small', 'red']
@@ -224,10 +227,18 @@ def some_text(string):
     #line = f'A:{text}, B:{string}', int(string) - 214442, int(string) % 21
     #print(line, sep=' #### ')
     print(text)
+#
+# some_text(str(input()))
+#
+# _list = string.whitespace
+# for i in _list:
+#      print(i)
 
-some_text(str(input()))
+#  -----------------Esc - последовательность---------------------------------------------------------------------------
 
-_list = string.whitespace
-for i in _list:
-     print(i)
+
+print('this is \t - tabulation')
+print('this is \n - new line')
+print('\\n\\t - this is backslash (\\) bends over backwards to shield the escape-sequence')
+print(r'Type a \n to get a new line in normal string. Type \t for tabulation and \ to shield the escape-sequence')
 
