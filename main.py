@@ -213,9 +213,6 @@ def exercise_two(size, color):
 exercise_two('small', 'green')
 
 
-"""
-
-
 def some_text(string):
     text = '''Вышел ёжик , \
 из \nтумана\rвынул\t\t\tкор\vжи\a\a\aк\a "из"\
@@ -241,4 +238,28 @@ print('this is \t - tabulation')
 print('this is \n - new line')
 print('\\n\\t - this is backslash (\\) bends over backwards to shield the escape-sequence')
 print(r'Type a \n to get a new line in normal string. Type \t for tabulation and \ to shield the escape-sequence')
+
+
+"""
+
+#  -----------------Конкатинация строки, brakets for line break------------------------------------------------------------------------------
+
+
+print("Release the kraken! " + "No, wait")
+
+vowels = ('abs'
+          'defg'
+          'hijk'
+          'lmn'
+          'opq'
+          'rst'
+          'uvw'
+          'xyz')
+print(vowels)
+
+
+a = 'Duck.'
+b = 'Grey Duck!'
+c = a
+print(a + b + c)
 
