@@ -240,9 +240,9 @@ print('\\n\\t - this is backslash (\\) bends over backwards to shield the escape
 print(r'Type a \n to get a new line in normal string. Type \t for tabulation and \ to shield the escape-sequence')
 
 
-"""
 
-#  -----------------Конкатинация строки, brakets for line break------------------------------------------------------------------------------
+
+#  -----------------Конкатинация строки, brakets for line break---------------------------------------------------------
 
 
 print("Release the kraken! " + "No, wait")
@@ -261,5 +261,24 @@ print(vowels)
 a = 'Duck.'
 b = 'Grey Duck!'
 c = a
-print(a + b + c)
+print((a + b + c) * 2 + vowels)
 
+"""
+#  -----------------Вывод строки. Начало с большой буквы, всё остальное с маленькой------------------------------------
+
+
+def string(input):
+    line = str(input)
+    new_string = []
+    index = 0
+    for letter in line:
+        if index == 0:
+            new_string.append(line[0].upper())
+        if index > 0:
+            new_string.append(letter.lower())
+        index += 1
+    _line = ''.join(new_string)
+    print(_line)
+
+
+string('ИНСТРУКЦИЯ по накоплению отходов «Аккумуляторы свинцовые отработанные неповрежденные, с электролитом»')
