@@ -1,15 +1,13 @@
-def summary(input_file, output_file):
+def multiply(input_file, output_file):
     file = open(input_file, 'r')
     result = open(output_file, 'w')
-    # summ = 0
     for line in file:
-        if int(line) > 10**4:
-            result.write('INVALID NUMBER' + '\n')
-        else:
-            summ = 0
-            for i in range(0, int(line) + 1):
-                summ += i
-            result.write(str(summ) + '\n')
+        if int(line) < 4*(10**5):
+            number = int(line)**2
+            result.write(str(number) + '\n')
+        print(4*(10**5))
+    else:
+        result.write('INVALID NUMBER')
 
 
-summary('INPUT.txt','OUTPUT.txt')
+multiply('INPUT.txt', 'OUTPUT.txt')
