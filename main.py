@@ -265,7 +265,7 @@ b = 'Grey Duck!'
 c = a
 print((a + b + c) * 2 + vowels)
 
-"""
+
 #  -----------------Вывод строки. Начало с большой буквы, всё остальное с маленькой------------------------------------
 
 
@@ -286,3 +286,25 @@ def string(input):
 string('ИНСТРУКЦИЯ по накоплению отходов «Аккумуляторы свинцовые отработанные неповрежденные, с электролитом»')
 
 
+"""
+
+
+#  -----------------Multiply strings with «*» symbol ------------------------------------------------------------------
+
+
+def string():
+    start = 'Na ' * 4 +'\n'
+    middle = 'Hey ' *3 +'\n'
+    end = 'Goodbye.'
+    line = []
+    line.append(start)
+    line.append(middle)
+    line.append(end)
+    # line = start + middle + end
+    li = line[0].strip('\n')
+    li += line[1].replace('\n','    ')
+    li += line[2]
+    print(li)
+
+
+string()
