@@ -286,15 +286,13 @@ def string(input):
 string('ИНСТРУКЦИЯ по накоплению отходов «Аккумуляторы свинцовые отработанные неповрежденные, с электролитом»')
 
 
-"""
+#  -----------------Multiply strings with «*» symbol and using symbols "[]" to  extract symbol-------------------------
 
-
-#  -----------------Multiply strings with «*» symbol ------------------------------------------------------------------
 
 
 def string():
     start = 'Na ' * 4 +'\n'
-    middle = 'Hey ' *3 +'\n'
+    middle = 'Hey ' * 3 +'\n'
     end = 'Goodbye.'
     line = []
     line.append(start)
@@ -304,7 +302,33 @@ def string():
     li = line[0].strip('\n')
     li += line[1].replace('\n','    ')
     li += line[2]
-    print(li)
+    # lane = ''
+    # for i in li:
+    #     print(i)
+    lane = ''.join([i for i in li])[2::3]
+    print(lane)
 
 
 string()
+
+x = input('To start developing "ТЗ" press ENTER...')
+print(x)
+"""
+#  -----------------Multiply strings with «*» symbol and using symbols "[]" to  extract symbol-------------------------
+
+def ckuak(count):
+    voice = []
+    letters = ''
+    for x in range(0, count):
+        duck = 'quak!'
+        voice.append(duck)
+    # print(*voice)
+    letterts = voice[0]
+    newduck = duck.replace('q', 'D')
+    print(duck.replace('q', 'D'), duck.replace('a', 'c'))
+    print(newduck.replace('a', 'c'))
+    print((letterts[0:2] * 2 + (letterts[2:5] * 3) + letterts[-2] + '  ') * 2)
+
+ckuak(6)
+
+
