@@ -313,7 +313,7 @@ string()
 
 x = input('To start developing "ТЗ" press ENTER...')
 print(x)
-"""
+
 #  -----------------Multiply strings with «*» symbol and using symbols "[]" to  extract symbol-------------------------
 
 def ckuak(count):
@@ -330,5 +330,16 @@ def ckuak(count):
     print((letterts[0:2] * 2 + (letterts[2:5] * 3) + letterts[-2] + '  ') * 2)
 
 ckuak(6)
+"""
 
+#  -----------------Extracting the substring by using colon operator---------------------------------------------------
 
+def colon_operator():
+    text = 'Here i brought you some tasty text, so use it wisely'
+    text_2 = 'i have hlidledo here some word, try to find it'
+    letters = text[19:-18:1]
+    letters_2 = text_2[2::3]
+    print(letters)
+    print(letters_2[0:5])
+
+colon_operator()
