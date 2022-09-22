@@ -330,7 +330,7 @@ def ckuak(count):
     print((letterts[0:2] * 2 + (letterts[2:5] * 3) + letterts[-2] + '  ') * 2)
 
 ckuak(6)
-"""
+
 
 #  -----------------Extracting the substring by using colon operator---------------------------------------------------
 
@@ -343,3 +343,40 @@ def colon_operator():
     print(letters_2[0:5])
 
 colon_operator()
+
+"""
+#  ----------------measuring string with function len() -------------------------------------------------------------
+
+
+def string():
+    text = "I definitely need to learn speaking english"
+    print('There are', len(text), 'letters in this text')
+    return text
+
+
+#  ---------------- Splitting string with function split() ------------------------------------------------------------
+#  ---------------- Changing part of string with function enumerate()--------------------------------------------------
+
+def desintegration():
+    list = []
+    text = string().split(' ')
+    for index, item in enumerate(text):
+        # print(index, item)
+        if index == 0:
+            list.append('We')
+        else:
+            list.append(item)
+    print(*list)
+
+desintegration()
+
+
+def dream(message):
+    wish = message
+    my_will = 'I can make a wish, and it is comes true'
+    return True
+
+
+if dream('I wish to all the people of the world, to make this life beautiful adventure. Try to like your neighbor. '
+         'Do your best. Make some friends. Make love. Create. Imagine.'):
+    print('It is DONE')
